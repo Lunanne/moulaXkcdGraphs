@@ -1,0 +1,10 @@
+{
+"name": "moula-xkcd-graphs",
+"version": "0.0.0",
+"description": "Moula stats in xkcd style graphs",
+"author": "Anne Marije v/d Meer <anne.marije.meer@gmail.com>",
+"license": "GPL v3",
+"devDependencies": {
+"bower": "^1.3.12"
+}
+}

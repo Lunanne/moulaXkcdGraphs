@@ -1,0 +1,55 @@
+
+<head>
+<meta charset="utf-8">
+<title>MOULa XKCD graphs</title>
+<script src="http://d3js.org/d3.v2.min.js?2.10.0"></script>
+<script src="thirdPartyLibs/xkcd.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="app.js"></script>
+<style>
+
+@font-face {
+  font-family: "xkcd";
+  src: file('./resources/xkcd.ttf');
+}
+
+body {
+  font-family: "xkcd", sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin-top: 75px;
+}
+
+text.title {
+  font-size: 20px;
+}
+
+path {
+  fill: none;
+  stroke-width: 2.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+path.axis {
+  stroke: black;
+}
+
+path.bgline {
+  stroke: white;
+  stroke-width: 6px;
+}
+
+</style>
+</head>
+<body ng-app="moulaXkcdStats">
+  <p>X-axis is always time, in this case the last 8 days.</p>
+  <div ng-controller="moulaStatsController">
+    <moula-xkcd-accounts></moula-xkcd-accounts>
+    <moula-xkcd-ages></moula-xkcd-ages>
+    <moula-xkcd-general-vault></moula-xkcd-general-vault>
+    <moula-xkcd-technical-vault></moula-xkcd-technical-vault>
+  </div>
+</body>
+</html>
