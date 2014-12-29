@@ -13,4 +13,4 @@ After which you should have all required files. Feel free to poke this code your
 
 Oh yeah screenshot
 
-[](./screenshot.png)
+![](./screenshot.png)
